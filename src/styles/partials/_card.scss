@@ -1,0 +1,25 @@
+// Card styles
+
+.card {
+    margin: 10px 0 70px 0;
+    &__image {
+        width: 350px;
+        height: 250px;
+        object-fit: cover;
+        opacity: 0.9;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__name {
+        font-size: 2em;
+        font-weight: bold;
+    }
+    &__price {
+        font-size: 2.3em;
+        margin-left: 300px;
+        font-weight: bold;
+        color: $green;
+        margin-top: -30px;
+    }
+}

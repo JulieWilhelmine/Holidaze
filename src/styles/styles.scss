@@ -1,0 +1,50 @@
+//Main scss
+
+//Variables
+$mada: 'Mada', sans-serif;  
+$unica: 'Unica One', cursive;
+$lightblue: #3083ae;
+$darkblue: #09689a;
+$lightgrey: #616160;
+$darkgrey: #393939;
+$green: #24A36E;
+
+body {
+    font-family: $mada;
+    color: $darkgrey;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: $darkblue;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.headline {
+    &--contact, &--login, &--home {
+        margin-left: 20%;
+        margin-top: 100px;
+    }
+    &--accommodations, &--admin {
+        margin: 20px 0 10px 70px;
+    }
+}
+
+//Imports
+@import url(https://fonts.googleapis.com/css?family=Mada|Unica+One&display=swap);
+
+@import './partials/navigation';
+@import './partials/form';
+@import './partials/image';
+@import './partials/card';
+@import './partials/admin';
+@import './partials/accommodations';
+@import './partials/modal';

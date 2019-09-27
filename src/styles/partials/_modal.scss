@@ -1,0 +1,49 @@
+// Modal styles
+
+.makeEnquiry {
+    max-width: 800px;
+    background-color: white;
+    margin: 200px auto 0 auto;
+    padding: 50px;
+    border: 1px $lightgrey solid;
+    &__headline {
+        color: $lightgrey;
+    }
+    &__form {
+        width: 90%;
+        margin: 0 auto 0 auto;
+    }
+    &__input {
+        margin: 10px 0 0 10px;
+        border-radius: 10px;
+        border: 1px solid $lightgrey;
+        width: 200px;
+        padding: 4px;
+        &--dates {
+            max-width: 150px;
+            margin-right: 10px;
+        }
+        &--guests {
+            max-width: 100px;
+        }
+        &--notes {
+            width: 58%;
+            max-width: 500px;
+        }
+        &--establishment {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+    }
+    &__submit {
+        @extend .contact__submit;
+        margin: 10px 50px 10px 0;
+    }
+    &__X {
+        color: $lightgrey;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+// Navigation styles
+
+//Variables
+$mada: 'Mada', sans-serif;  
+$unica: 'Unica One', cursive;
+$lightblue: #3083ae;
+$darkblue: #09689a;
+$lightgrey: #616160;
+$darkgrey: #393939;
+
+
+#logo {
+    font-family: $unica;
+    font-size: 3em;
+    color: $lightblue;
+    margin: 10px;
+}
+
+.nav {
+    font-family: $mada;
+    font-size: 1.6em;
+
+    &__link {
+        top: 0;
+        right: 0;
+        color: $darkgrey;
+
+        :hover {
+            color: $lightblue;
+        }
+    }
+
+    &__link--active {
+        font-weight: bold;
+    }
+
+    li {
+        list-style: none;
+        display: inline;
+        margin-right: 30px;
+        top: 10px;
+    }
+
+    ul {
+        text-align: right;
+    }
+}
