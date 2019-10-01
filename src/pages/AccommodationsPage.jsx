@@ -84,6 +84,8 @@ export default class AccommodationsPage extends Component {
                     <div className="[ col-sm-12 ]">
                         <Search onSearchTerm={this.handleSearchTerm}></Search>
                     </div>
+                </div>
+                <div className="[ row ]">
                     <div className="[ col-sm-12 ]">
                         {this.renderAccommodations()}
                     </div>

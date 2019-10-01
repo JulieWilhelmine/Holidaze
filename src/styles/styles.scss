@@ -13,6 +13,7 @@ body {
     font-family: $mada;
     color: $darkgrey;
     overflow-x: hidden;
+    height: 100%;
 }
 
 h1 {
@@ -48,3 +49,4 @@ a {
 @import './partials/admin';
 @import './partials/accommodations';
 @import './partials/modal';
+@import './partials/homepage';

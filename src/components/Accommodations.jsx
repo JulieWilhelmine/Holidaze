@@ -12,15 +12,14 @@ class Accommodations extends React.Component {
 
     render() {
         return (
-            <div className="[ col-sm-3 ]">
-                <div className="[ card ]">
-                    <a onClick={this.handleClick} >
-                        <div><img src={this.props.image} className="[ card__image ]" /></div>
-
-                        <h3 className="[ card__name ]">{this.props.name}</h3>
-                        <h3 className="[ card__price ]">{this.props.price + "$"}</h3>
-                    </a>
-                </div>
+            <div className="[ row ]">
+                    <div className="[ card ]" onClick={this.handleClick}>
+                        <img src={this.props.image} className="[ card__image ] [ card-img-top ]" alt="the accommodation" />
+                        <div className="[ card-body ]">
+                            <h3 className="[ card__name ] [ card-title ]">{this.props.name}</h3>
+                            <h3 className="[ card__price ]">{this.props.price + "$"}</h3>
+                        </div>
+                    </div>
             </div>
         );
     }

@@ -46,6 +46,7 @@ export default class LoginPage extends React.Component {
         const app = this;
         return (
             <div className="[ wrapper ]">
+                <div className="[ row ]">
                 <div className="[ col-sm-6 ]">
                 <img src="https://images.unsplash.com/photo-1456176609386-1a154fc264ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1947&q=80" className="[ sideImage ] [ sideImage--login ]" />
                 </div>
@@ -56,6 +57,7 @@ export default class LoginPage extends React.Component {
                                 usernameError={app.state.isUsername}
                                 passwordError={app.state.isPassword}>
                 </Login>
+                </div>
                 </div>
             </div>
         );

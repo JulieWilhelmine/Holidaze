@@ -11,19 +11,17 @@ $darkgrey: #393939;
 
 #logo {
     font-family: $unica;
-    font-size: 3em;
+    font-size: 2.4em;
     color: $lightblue;
     margin: 10px;
 }
 
 .nav {
-    font-family: $mada;
-    font-size: 1.6em;
-
     &__link {
-        top: 0;
-        right: 0;
+        margin-right: 20px;
         color: $darkgrey;
+        font-family: $mada;
+        font-size: 1.3em;
 
         :hover {
             color: $lightblue;
@@ -32,16 +30,5 @@ $darkgrey: #393939;
 
     &__link--active {
         font-weight: bold;
-    }
-
-    li {
-        list-style: none;
-        display: inline;
-        margin-right: 30px;
-        top: 10px;
-    }
-
-    ul {
-        text-align: right;
     }
 }
