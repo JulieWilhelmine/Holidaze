@@ -2,6 +2,8 @@
 import React, { Component } from 'react';
 import Accommodations from '../components/Accommodations';
 import Search from '../components/Search';
+import {Typeahead} from 'react-bootstrap-typeahead';
+import 'react-bootstrap-typeahead/css/Typeahead.css';
 
 export default class AccommodationsPage extends Component {
     constructor(props) {
@@ -30,19 +32,6 @@ export default class AccommodationsPage extends Component {
                     hotelSearch: result
                 });
             });
-    }
-
-    handleSearchTerm = (searchTerm) => {
-
-        let hotelArray = this.state.hotelSearch;
-
-        let hotels = hotelArray.filter((hotel) => {
-            return hotel.establishmentName.toLowerCase().includes(searchTerm.toLowerCase())
-        });
-
-        this.setState({
-            hotelArray: hotels
-        });
     }
 
 
@@ -81,9 +70,13 @@ export default class AccommodationsPage extends Component {
                 <h1 className="[ headline ] [ headline--accommodations ]">Accommodations</h1>
 
                 <div className="[ row ]">
-                    <div className="[ col-sm-12 ]">
-                        <Search onSearchTerm={this.handleSearchTerm}></Search>
-                    </div>
+                <Typeahead className="[ searchbar ] [ searchbar--accommodations ]"
+                onChange={(selected) => {
+                // Handle selections...
+                }}
+                options={[ /* Array of objects or strings */ ]}
+                placeholder="What are you looking for?"
+                />
                 </div>
                 <div className="[ row ]">
                     <div className="[ col-sm-12 ]">

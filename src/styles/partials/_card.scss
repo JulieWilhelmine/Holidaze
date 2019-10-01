@@ -1,7 +1,21 @@
 // Card styles
 
+.searchbar {
+    background-image: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png") top left no-repeat;
+    height: 30px;
+    padding-left: 10px;
+    &--accommodations {
+        width: 400px;
+        margin: 10px 0 100px 80px;
+    }
+    &--home {
+        width: 600px;
+        margin: 15px auto 0 auto;
+    }
+}
+
 .card {
-    margin: 10px 0 70px 0;
+    margin: 10px 0 60px 0;
     &__image {
         width: 350px;
         height: 250px;

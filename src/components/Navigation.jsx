@@ -21,11 +21,10 @@ function Navigation() {
             <Navbar.Collapse id="basic-navbar-nav">
           
           <Nav className="ml-auto" pullRight>
-            <NavLink to="/" exact className="[ nav-link ] [ nav__link ]">Home</NavLink>
-            <NavLink to="/accommodations/" className="[ nav-link ] [ nav__link ]">
-              Accommodations</NavLink>
-            <NavLink to="/contact/" className="[ nav-link ] [ nav__link ]">Contact</NavLink>
-            <NavLink to="/login/" className="[ nav-link ] [ nav__link ]">Login</NavLink>
+            <NavLink to="/" exact className="[ nav-link ] [ nav__link ] [ nav__link--active ]">Home</NavLink>
+            <NavLink to="/accommodations/" className="[ nav-link ] [ nav__link ] [ nav__link--active ]">Accommodations</NavLink>
+            <NavLink to="/contact/" className="[ nav-link ] [ nav__link ] [ nav__link--active ]">Contact</NavLink>
+            <NavLink to="/login/" className="[ nav-link ] [ nav__link ] [ nav__link--active ]">Login</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

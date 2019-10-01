@@ -81,14 +81,16 @@ export default class AdminPage extends Component {
                 <h1 className="[ headline ] [ headline--admin ]">Administration</h1>
                 <button className="[ AddEstablishmentButton ]">Add Establishment</button>
                 
-                <div className="[ col-sm-6 ]">
+                <div className="[ row ]">
+                <div className="[ col-sm-6 ] [ enquiries ]">
                     <h2 className="[ headline ] [ headline--enquiries ]">Enquiries</h2>
                     {this.renderEnquiries()}
                 </div>
 
-                <div className="[ col-sm-6 ]">
+                <div className="[ col-sm-6 ] [ messages ]">
                     <h2 className="[ headline ] [ headline--messages ]">Messages</h2>
                     {this.renderMessages()}
+                </div>
                 </div>
 
             </div>
