@@ -79,9 +79,9 @@ export default class AccommodationsPage extends Component {
                 />
                 </div>
                 <div className="[ row ]">
-                    <div className="[ col-sm-12 ]">
+                <div className="[ card-deck ]">
                         {this.renderAccommodations()}
-                    </div>
+                </div>
                 </div>
             </div>
         );

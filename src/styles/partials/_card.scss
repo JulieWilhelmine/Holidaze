@@ -16,6 +16,7 @@
 
 .card {
     margin: 10px 0 60px 0;
+    cursor: pointer;
     &__image {
         width: 350px;
         height: 250px;
@@ -26,14 +27,23 @@
         }
     }
     &__name {
-        font-size: 2em;
+        font-size: 1.5em;
         font-weight: bold;
+        color: $lightblue;
+
+        &:hover{
+            color: $darkblue;
+        }
     }
     &__price {
-        font-size: 2.3em;
-        margin-left: 300px;
+        font-size: 2em;
+        margin-left: 280px;
         font-weight: bold;
         color: $green;
-        margin-top: -30px;
+        margin-top: -25px;
     }
+}
+
+.card-deck {
+    margin: 0 0 100px 30px;
 }
