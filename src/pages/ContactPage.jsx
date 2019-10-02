@@ -43,7 +43,7 @@ updateSentState = () => {
                     <br />
                     <label className="[ contact__message ]" for="message">Message: </label>
                     <br />
-                    <textarea name="message" id="message" rows="8" cols="80"></textarea>
+                    <textarea name="message" id="message" rows="8" cols="60"></textarea>
                     <br />
                     <input className="[ contact__submit ]" onClick={this.submitContact} type="submit" />
                 </form>

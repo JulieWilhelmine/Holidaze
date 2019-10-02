@@ -19,8 +19,9 @@ export default class AccommodationSpecific extends React.Component {
                     <p className="[ hotel__description ]">{this.props.description}</p>
                     <b className="[ hotel__location ]">Location:</b> <p>{this.props.lat + this.props.long}</p>
                     <b className="[ hotel__email ]">Email:</b> <p>{this.props.email}</p>
+
+                    <button className="[ enquiryButton ]" onClick={this.props.openModal}>Make an enquiry!</button>
                 </div>
-                <button className="[ enquiryButton ]" onClick={this.props.openModal}>Make an enquiry!</button>
             </div>
         );
     }

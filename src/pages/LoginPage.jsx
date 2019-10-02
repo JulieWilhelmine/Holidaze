@@ -47,17 +47,17 @@ export default class LoginPage extends React.Component {
         return (
             <div className="[ wrapper ]">
                 <div className="[ row ]">
-                <div className="[ col-sm-6 ]">
-                <img src="https://images.unsplash.com/photo-1456176609386-1a154fc264ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1947&q=80" className="[ sideImage ] [ sideImage--login ]" alt="hillside" />
-                </div>
+                    <div className="[ col-sm-6 ]">
+                        <img src="https://images.unsplash.com/photo-1456176609386-1a154fc264ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1947&q=80" className="[ sideImage ] [ sideImage--login ]" alt="hillside" />
+                    </div>
                 
-                <div className="[ col-sm-6 ]">
-                <h1 className="[ headline ] [ headline--login ]">Administration Login</h1>
-                <Login childLogin={this.parentLogin}
+                    <div className="[ col-sm-6 ]">
+                        <h1 className="[ headline ] [ headline--login ]">Administration Login</h1>
+                                <Login childLogin={this.parentLogin}
                                 usernameError={this.state.isUsername}
                                 passwordError={this.state.isPassword}>
-                </Login>
-                </div>
+                                </Login>
+                    </div>
                 </div>
             </div>
         );

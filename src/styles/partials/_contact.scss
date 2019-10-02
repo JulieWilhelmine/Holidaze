@@ -1,0 +1,37 @@
+// contact styles
+
+.headline--contact {
+    margin-left: 20%;
+    margin-top: 100px;
+}
+
+.contact {
+    margin-left: 20%;
+    font-size: 1.2em;
+    label {
+        font-size: 1.1em;
+    }
+    &__submit {
+        margin: 10px 0 0 59%;
+    }
+    &__input {
+        margin: 10px 0 0 10px;
+        border-radius: 10px;
+        border: 1px solid $lightgrey;
+        width: 200px;
+    }
+    &__message{
+        margin-top: 20px;
+    }
+    &__submit {
+        background-color: $lightblue;
+        font-size: 1.5em;
+        padding: 10px 30px;
+        border: 1px solid $lightgrey;
+        border-radius: 10px;
+        color: white;
+        &:hover {
+            background-color: $darkblue;
+        }
+    }
+}

@@ -30,7 +30,7 @@ a {
 }
 
 .headline {
-    &--contact, &--login, &--home {
+    &--login, &--home {
         margin-left: 20%;
         margin-top: 100px;
     }
@@ -50,3 +50,5 @@ a {
 @import './partials/accommodations';
 @import './partials/modal';
 @import './partials/homepage';
+@import './partials/contact';
+@import './partials/login';

@@ -1,0 +1,19 @@
+// Login styles 
+
+.login {
+    margin: 0 auto 0 auto;
+    &__form {
+        margin-left: 25%;
+    }
+    &__input {
+        @extend .contact__input;
+        padding: 5px;
+    }
+
+    &__button {
+        @extend .contact__submit;
+        margin: 20px 0 0 60px;
+        padding: 10px 25px;
+    }
+}
+
