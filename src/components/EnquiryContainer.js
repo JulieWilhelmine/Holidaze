@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import EnquiryForm from "./EnquiryForm";
+import MessageAlert from "./MessageAlert";
 
 export default class EnquiryContainer extends Component {
 

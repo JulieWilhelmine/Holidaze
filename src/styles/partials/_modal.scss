@@ -49,3 +49,21 @@
         }
     }
 }
+
+.contactSent {
+    @extend .makeEnquiry;
+    max-width: 700px;
+    p {
+        text-align: center;
+        font-size: 1.1em;
+    }
+    &__X {
+        color: $lightgrey;
+        float: right;
+        margin: -30px 0 0 0;
+        font-size: 2em;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

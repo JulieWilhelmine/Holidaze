@@ -6,9 +6,16 @@ import Modal from 'react-modal';
 
 export default class ContactPage extends Component {
   
-  state = {
-    modalIsOpen: false
-}
+  constructor(props) {
+    super(props);
+  
+    this.state = {
+        modalIsOpen: false,
+        clientName: "",
+        email: "",
+        message: ""
+    }
+  }
 
 openModal = () => {
     this.setState({modalIsOpen: true});
@@ -18,10 +25,34 @@ closeModal = () => {
     this.setState({modalIsOpen: false});
 }
 
-updateSentState = () => {
+handleChange = e => {
   this.setState({
-      enquirySent: true
+      [e.target.name]: e.target.value,            
   })
+}
+
+  sendMessage = async e => {
+  e.preventDefault();
+
+  const formData = new FormData();
+  formData.append('clientName', this.state.clientName);
+  formData.append('email', this.state.email);
+  formData.append('message', this.state.message);
+  
+
+  fetch('http://localhost/hotel-booking/server/contact-success.php', {  
+      method: 'POST',
+      body: formData
+  })
+  .then(data => {  
+    this.openModal();
+    console.log('Request success: ', data);  
+  })  
+  .catch(error => {  
+    console.log('Request failure: ', error);  
+  });
+
+
 }
 
   render() {
@@ -34,18 +65,19 @@ updateSentState = () => {
         
         <div className="[ col-sm-6 ]">
              <h1 className="[ headline ] [ headline--contact ]">Contact us</h1>
-                 <form className="[ contact ]" method="POST" action="http://localhost/hotel-booking/server/contact-success.php">
+
+                 <form className="[ contact ]" onSubmit={this.sendMessage}>
                     <label for="clientName">Full name: </label>
-                    <input className="[ contact__input ]" type="text" name="clientName" id="clientName"  required />
+                    <input className="[ contact__input ]" onChange={this.handleChange} type="text" name="clientName" id="clientName" value={this.state.clientName}  required />
                     <br />
                     <label for="email">Email Address: </label>
-                    <input className="[ contact__input ]" type="text" name="email" id="email"  required />
+                    <input className="[ contact__input ]" onChange={this.handleChange} type="text" name="email" id="email" value={this.state.email}  required />
                     <br />
-                    <label className="[ contact__message ]" for="message">Message: </label>
+                    <label className="[ contact__message ]" onChange={this.handleChange} for="message">Message: </label>
                     <br />
-                    <textarea name="message" id="message" rows="8" cols="60"></textarea>
+                    <textarea name="message" id="message" rows="8" cols="60" onChange={this.handleChange} value={this.state.message}></textarea>
                     <br />
-                    <input className="[ contact__submit ]" onClick={this.submitContact} type="submit" />
+                    <input className="[ contact__submit ]" type="submit" />
                 </form>
         </div>
         </div>
@@ -54,8 +86,8 @@ updateSentState = () => {
                            onRequestClose={this.closeModal}
                            contentLabel="contactSent"
                           >
+                          <h1 className="[ contactSent__X ]" onClick={this.closeModal}>X</h1>
                           <p>Thank you for your message, we will get back to you shortly!</p>
-                          <h1 className="[ contactSent__X ]" onClick={this.closeModal + this.updateSentState}>X</h1>
                     </Modal>
       </div>
     )
