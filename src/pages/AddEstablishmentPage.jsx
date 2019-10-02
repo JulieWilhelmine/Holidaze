@@ -118,7 +118,7 @@ fetch('http://localhost/hotel-booking/server/add-establishments-success.php', {
                            contentLabel="establishmentAdded"
                           >
                           <h1 className="[ establishmentAdded__X ]" onClick={this.closeModal}>X</h1>
-                          <p>Thank you for your message, we will get back to you shortly!</p>
+                          <p>The establishment has been added!</p>
         </Modal>
       </div>
     )
