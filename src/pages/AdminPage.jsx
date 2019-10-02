@@ -72,6 +72,10 @@ export default class AdminPage extends Component {
       })
   }
 
+    redirect = () => {
+    this.props.history.push('/addEstablishment');
+    }
+
 
     render() {
 
@@ -79,7 +83,7 @@ export default class AdminPage extends Component {
             <div className="[ wrapper ]">
 
                 <h1 className="[ headline ] [ headline--admin ]">Administration</h1>
-                <button className="[ AddEstablishmentButton ]">Add Establishment</button>
+                <button className="[ AddEstablishmentButton ]" onClick={this.redirect}>Add Establishment</button>
                 
                 <div className="[ row ]">
                 <div className="[ col-sm-6 ] [ enquiries ]">
