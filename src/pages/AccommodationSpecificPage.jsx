@@ -1,6 +1,6 @@
 import React from 'react';
 import AccommodationSpecific from '../components/AccommodationsSpecific';
-import Modal from 'react-modal';
+import Modal from 'react-bootstrap/Modal'
 import EnquiryContainer from "../components/EnquiryContainer";
 
 export default class AccommodationSpesificPage extends React.Component {
@@ -56,18 +56,22 @@ export default class AccommodationSpesificPage extends React.Component {
                                 openModal={this.openModal}
                             />
                         </div>
-                        <div>
-                            <Modal className="[ makeEnquiry ]"
-                                isOpen={this.state.modalIsOpen}
+                        
+                            <Modal className="[ enquiryModal ]"
+                                show={this.state.modalIsOpen}
                                 onRequestClose={this.closeModal}
-                                contentLabel="EnquiryModal"
+                                dialogClassName="modal-90w"
+                                aria-labelledby="example-custom-modal-styling-title"
                             >
-                            <h1 className="[ makeEnquiry__X ]" onClick={this.closeModal}>X</h1>
+                            <Modal.Header closeButton onClick={this.closeModal}>
+                            <Modal.Title id="example-custom-modal-styling-title">
+                            </Modal.Title>
+                            </Modal.Header>
 
-                            <EnquiryContainer establishmentName={establishmentName}/>
+                            <EnquiryContainer className="[ enquiry__container ]" establishmentName={establishmentName}/>
 
                             </Modal>
-                        </div>
+                        
             </div>
         );
     }

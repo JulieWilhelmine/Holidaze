@@ -25,3 +25,38 @@
     @extend .AddEstablishmentButton;
     margin: 10px 40% 0 0;
 }
+
+.enquiryModal {
+    min-width: 700px;
+}
+
+.makeEnquiry {
+    &__form {
+        padding: 60px;
+        min-width: 700px;
+    }
+    &__input {
+        margin: 10px 10px 0 10px;
+        border-radius: 10px;
+        border: 1px solid $lightgrey;
+        padding: 4px;
+        &--establishment {
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+    &__submit {
+        background-color: $lightblue;
+        font-size: 1.5em;
+        padding: 10px 30px;
+        border: 1px solid $lightgrey;
+        border-radius: 10px;
+        color: white;
+        float: right;
+        margin: 10px 0 0 0;
+        &:hover {
+            background-color: $darkblue;
+        }
+}
+}
