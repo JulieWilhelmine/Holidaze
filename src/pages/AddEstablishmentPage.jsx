@@ -77,35 +77,35 @@ fetch('http://localhost/hotel-booking/server/add-establishments-success.php', {
                 
                 <h2 className="[ headline ] [ headline--addEstablishment ]">Establishment details:</h2>
                     <form  onSubmit={this.sendMessage} className="[ addEstablishment ]">
-                        <label for="establishmentName">Establishment Name: </label>
+                        <label htmlFor="establishmentName">Establishment Name: </label>
                         <input type="text" name="establishmentName" id="establishmentName" className="[ addEstablishment__input ]" onChange={this.handleChange} value={this.state.establishmentName} required />
-                        <label for="establishmentEmail">Establishment Email: </label>
+                        <label htmlFor="establishmentEmail">Establishment Email: </label>
                         <input type="text" name="establishmentEmail" id="establishmentEmail" className="[ addEstablishment__input ]" onChange={this.handleChange} value={this.state.establishmentEmail} required />
                         <br />
-                        <label for="imageUrl">Image URL: </label>
+                        <label htmlFor="imageUrl">Image URL: </label>
                         <input type="text" name="imageUrl" id="imageUrl" className="[ addEstablishment__input ]" onChange={this.handleChange} value={this.state.imageUrl} required />
-                        <label for="price">Price per person per night ($): </label>
+                        <label htmlFor="price">Price per person per night ($): </label>
                         <input type="number" name="price" id="price" className="[ addEstablishment__input ]" onChange={this.handleChange} value={this.state.price} required />
                         
                         <br />
-                        <label for="maxGuests">Max guests: </label>
+                        <label htmlFor="maxGuests">Max guests: </label>
                         <input type="number" name="maxGuests" id="maxGuests" className="[ addEstablishment__input ]" onChange={this.handleChange} value={this.state.maxGuests} required />
-                        <label for="id">ID: </label>
+                        <label htmlFor="id">ID: </label>
                         <input type="number" name="id" id="id" className="[ addEstablishment__input ]" onChange={this.handleChange} value={this.state.id} required />
                         <br />
-                        <label for="selfCatering">Self-catering?</label>
-                        <label for="true">Yes</label>
+                        <label htmlFor="selfCatering">Self-catering?</label>
+                        <label htmlFor="true">Yes</label>
                         <input type="radio" id="true" name="selfCatering" value={this.state.selfCatering} onChange={this.handleChange} />
-                        <label for="false">No</label>
+                        <label htmlFor="false">No</label>
                         <input type="radio" id="false" name="selfCatering" value={this.state.selfCatering} onChange={this.handleChange} />
                         <br />
-                        <label for="googleLat">Google Coordinates Latitude: </label>
+                        <label htmlFor="googleLat">Google Coordinates Latitude: </label>
                         <input type="text" name="googleLat" id="googleLat" className="[ addEstablishment__input ]" onChange={this.handleChange} value={this.state.googleLat} required />
                         <br />
-                        <label for="googleLong">Google Coordinates Longitude: </label>
+                        <label htmlFor="googleLong">Google Coordinates Longitude: </label>
                         <input type="text" name="googleLong" id="googleLong" className="[ addEstablishment__input ]" onChange={this.handleChange} value={this.state.googleLong} required />
                         <br />
-                        <label for="description">Description: </label>
+                        <label htmlFor="description">Description: </label>
                         <input name="description" id="description" className="[ addEstablishment__input ]" onChange={this.handleChange} value={this.state.description} required />
                         <br />
                         <input type="submit" className="[ addEstablishment__submit ]"/>
