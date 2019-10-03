@@ -1,7 +1,7 @@
 // Contact Page
 
 import React, { Component } from 'react';
-import Modal from 'react-modal';
+import Modal from 'react-bootstrap/Modal'
 
 
 export default class ContactPage extends Component {
@@ -81,14 +81,22 @@ handleChange = e => {
                 </form>
         </div>
         </div>
-                    <Modal className="[ contactSent ]"
-                           isOpen={this.state.modalIsOpen}
-                           onRequestClose={this.closeModal}
-                           contentLabel="contactSent"
-                          >
-                          <h1 className="[ contactSent__X ]" onClick={this.closeModal}>X</h1>
-                          <p>Thank you for your message, we will get back to you shortly!</p>
-                    </Modal>
+        <Modal
+                    show={this.state.modalIsOpen}
+                    onRequestClose={this.closeModal}
+                    dialogClassName="modal-90w"
+                    aria-labelledby="example-custom-modal-styling-title"
+                  >
+                  <Modal.Header closeButton onClick={this.closeModal}>
+                  <Modal.Title id="example-custom-modal-styling-title">
+                  </Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>
+                    <p>
+                    Thank you for your message, we will get back to you shortly!
+                    </p>
+                  </Modal.Body>
+                </Modal>
       </div>
     )
   }
