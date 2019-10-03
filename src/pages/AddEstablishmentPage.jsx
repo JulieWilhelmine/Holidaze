@@ -1,7 +1,7 @@
 // Add Establishment Page
 
 import React, { Component } from 'react';
-import Modal from 'react-modal';
+import Modal from 'react-bootstrap/Modal'
 
 export default class AddEstablishmentPage extends Component {
 
@@ -64,8 +64,6 @@ fetch('http://localhost/hotel-booking/server/add-establishments-success.php', {
 .catch(error => {  
   console.log('Request failure: ', error);  
 });
-
-
 }
 
   render() {
@@ -112,14 +110,22 @@ fetch('http://localhost/hotel-booking/server/add-establishments-success.php', {
                     </form>
         </div>
 
-        <Modal className="[ establishmentAdded ]"
-                           isOpen={this.state.modalIsOpen}
-                           onRequestClose={this.closeModal}
-                           contentLabel="establishmentAdded"
-                          >
-                          <h1 className="[ establishmentAdded__X ]" onClick={this.closeModal}>X</h1>
-                          <p>The establishment has been added!</p>
-        </Modal>
+                  <Modal
+                    show={this.state.modalIsOpen}
+                    onRequestClose={this.closeModal}
+                    dialogClassName="modal-90w"
+                    aria-labelledby="example-custom-modal-styling-title"
+                  >
+                  <Modal.Header closeButton onClick={this.closeModal}>
+                  <Modal.Title id="example-custom-modal-styling-title">
+                  </Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>
+                    <p>
+                    The establishment has been added!
+                    </p>
+                  </Modal.Body>
+                </Modal>
       </div>
     )
   }

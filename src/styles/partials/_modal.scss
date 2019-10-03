@@ -67,3 +67,12 @@
         }
     }
 }
+
+.establishmentAdded {
+    @extend .contactSent;
+    max-width: 400px;
+    margin: 0 auto 0 auto;
+    &__X {
+        @extend .contactSent__X;
+    }
+}
