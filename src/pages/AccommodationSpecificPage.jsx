@@ -62,6 +62,7 @@ export default class AccommodationSpesificPage extends React.Component {
                                 onRequestClose={this.closeModal}
                                 dialogClassName="modal-90w"
                                 aria-labelledby="example-custom-modal-styling-title"
+                                size="lg"
                             >
                             <Modal.Header closeButton onClick={this.closeModal}>
                             <Modal.Title id="example-custom-modal-styling-title">

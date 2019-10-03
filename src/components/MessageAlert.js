@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 export default function MessageAlert({ message}) {
     return (
-        <div>
-            <p>{message}</p>
+        <div className="[ enquirySuccess__container ]">
+            <p className=" enquirySuccess__message ]">{message}</p>
         </div>
     )
 }
