@@ -28,10 +28,12 @@ export default class Login extends React.Component {
         return (
             <div className="[ row ] [ login ]">
                 <form className="[ login__form ]">
-                <input className="[ login__input ]" type="text" name="username" placeholder="Username" value={this.state.username} onChange={this.handleUsernameChange} />
+                <label for="username">Username: </label>
+                <input className="[ login__input ]" type="text" name="username" value={this.state.username} onChange={this.handleUsernameChange} />
                 <span className="[ login__error ]"><i>{this.props.usernameError}</i></span>
                 <br />
-                <input className="[ login__input ]" type="password" name="password" placeholder="Password" value={this.state.password} onChange={this.handlePasswordChange}/>
+                <label for="password">Password: </label>
+                <input className="[ login__input ]" type="password" name="password" value={this.state.password} onChange={this.handlePasswordChange}/>
                 <span className="[ login__error ]"><i>{this.props.passwordError}</i></span>
                 <br />
                 <button type="button" className="[ login__button ]" onClick={this.login}>Login</button>

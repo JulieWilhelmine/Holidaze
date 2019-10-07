@@ -8,6 +8,7 @@ function App() {
       <header className="[ App__header ]">
           <Navigation />
       </header>
+
     </div>
   );
 }

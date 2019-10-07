@@ -1,9 +1,9 @@
 // Accommodations Page
 import React, { Component } from 'react';
 import Accommodations from '../components/Accommodations';
-import Search from '../components/Search';
 import {Typeahead} from 'react-bootstrap-typeahead';
 import 'react-bootstrap-typeahead/css/Typeahead.css';
+import Spinner from 'react-bootstrap/Spinner'
 
 export default class AccommodationsPage extends Component {
     constructor(props) {
@@ -11,6 +11,7 @@ export default class AccommodationsPage extends Component {
         this.state = {
             hotelArray: [],
             hotelSearch: [],
+            loading: true
         };
     }
 
@@ -29,7 +30,8 @@ export default class AccommodationsPage extends Component {
 
                 this.setState({
                     hotelArray: result,
-                    hotelSearch: result
+                    hotelSearch: result,
+                    loading: false
                 });
             });
     }
@@ -64,6 +66,14 @@ export default class AccommodationsPage extends Component {
     }
 
     render() {
+
+        const { loading, hotelArray } = this.state
+
+        if (loading || !hotelArray) {
+            return <Spinner animation="border" variant="info" className="spinner">
+            <span className="sr-only">Loading...</span>
+            </Spinner>
+        }
 
         return (
             <div className="[ wrapper ]">
