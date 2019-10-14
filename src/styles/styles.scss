@@ -21,14 +21,6 @@ h1 {
     font-weight: bold;
 }
 
-a {
-    text-decoration: none;
-    &:hover {
-        text-decoration: none;
-        cursor: pointer;
-    }
-}
-
 .headline {
     &--login, &--home {
         margin-left: 20%;
@@ -52,4 +44,4 @@ a {
 @import './partials/contact';
 @import './partials/login';
 @import './partials/addEstablishment';
-@import './partials/mediaquiries';
+@import './partials/mediaqueries';
