@@ -52,7 +52,7 @@ export default class ContactPage extends Component {
 
   render() {
     return (
-      <div className="[ wrapper ] [ wrapper--contact ] ">
+      <div className="[ container-fluid ] [ container-fluid--contact ] ">
         <div className="[ row ]">
           <div className="[ col-sm-6 ] [ sideImage__container] ">
             <img

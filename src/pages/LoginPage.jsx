@@ -41,7 +41,7 @@ class LoginPage extends React.Component {
 
   render() {
     return (
-      <div className="[ wrapper ] [ wrapper--login ]">
+      <div className="[ container-fluid ] [ container-fluid--login ]">
         <div className="[ row ]">
           <div className="[ col-sm-6 ]">
             <img
