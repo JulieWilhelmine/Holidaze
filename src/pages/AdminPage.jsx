@@ -81,10 +81,11 @@ export default class AdminPage extends Component {
 
         return (
             <div className="[ wrapper ]">
-
+                <div className="[ col-sm-12 ]">
                 <h1 className="[ headline ] [ headline--admin ]">Administration</h1>
                 <button className="[ AddEstablishmentButton ]" onClick={this.redirect}>Add Establishment</button>
-                
+                </div>
+
                 <div className="[ row ]">
                 <div className="[ col-sm-6 ] [ enquiries ]">
                     <h2 className="[ headline ] [ headline--enquiries ]">Enquiries</h2>

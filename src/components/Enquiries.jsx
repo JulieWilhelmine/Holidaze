@@ -5,7 +5,6 @@ import React from 'react';
 export default class Enquiries extends React.Component {
     render() {
         return (
-            <div className="[ col-sm-6 ]">
                 <div className="[ enquiry ]">
                         <p className="[ enquiry__establishment ]">{this.props.establishment}</p>
                         <p className="[ enquiry__clientName ]">{this.props.clientName}</p>
@@ -14,7 +13,6 @@ export default class Enquiries extends React.Component {
                         <p className="[ enquiry__guests ]">{this.props.adults + " adults and " + this.props.children + " children"}</p>
                         <p className="[ enquiry__notes ]">{this.props.notes}</p>
                 </div>
-            </div>
         );
     }
 }

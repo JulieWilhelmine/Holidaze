@@ -15,28 +15,3 @@
     margin: 200px auto auto auto;
 }
 
-.search {
-    &--home {
-        margin-left: 20%;
-    }
-    &--accommodation {
-        width: 500px;
-        @extend .contact__input;
-        margin: 10px 0 100px 70px;
-    }
-    &__button {
-        margin: 20px 0 0 10px;
-        @extend .contact__submit;
-    }
-    &__input {
-        @extend .contact__input;
-        padding: 10px;
-        width: 500px;
-    }
-    &__label {
-        margin: 20px 10px 0 10px;
-    }
-    &__number {
-        margin-right: 10px;
-    }
-}

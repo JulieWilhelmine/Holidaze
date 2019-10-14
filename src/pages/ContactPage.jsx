@@ -57,9 +57,9 @@ handleChange = e => {
 
   render() {
     return (
-      <div className="[ wrapper ]">
+      <div className="[ wrapper ] [ wrapper--contact ] ">
         <div className="[ row ]">
-        <div className="[ col-sm-6 ] ">
+        <div className="[ col-sm-6 ] [ sideImage__container] ">
         <img src="https://images.unsplash.com/photo-1560687123-268c79127e7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="street view in Bergen" className="[ sideImage ] [ sideImage--contact ]" />
         </div>
         
@@ -75,7 +75,7 @@ handleChange = e => {
                     <br />
                     <label className="[ contact__message ]" onChange={this.handleChange} for="message">Message: </label>
                     <br />
-                    <textarea name="message" id="message" rows="8" cols="60" onChange={this.handleChange} value={this.state.message}></textarea>
+                    <textarea name="message" id="message" rows="8" cols="40" onChange={this.handleChange} value={this.state.message}></textarea>
                     <br />
                     <input className="[ contact__submit ]" type="submit" />
                 </form>
