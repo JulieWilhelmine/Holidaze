@@ -9,7 +9,7 @@ class LogOutButton extends Component {
     };
 
     render() {
-        return <button onClick={this.logOut}>Log out</button>;
+        return <button onClick={this.logOut} className="[ logout ]">Log out</button>;
     }
 }
 
