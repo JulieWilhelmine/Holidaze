@@ -9,10 +9,10 @@ export default class AccommodationSpecific extends React.Component {
                 <div className="[ col-sm-12 ]">
                     <br /><br /><br />
                 </div>
-                <div className="[ col-sm-6 ] ]">
+                <div className="[ col-sm-7 ]">
                     <img src={this.props.image} className="[ hotel__image ]" alt={this.props.name} />
                 </div>
-                <div className="[ col-sm-6 ] [ hotel__info ]">
+                <div className="[ col-sm-5 ] [ hotel__info ]">
                     <h2 className="[ hotel__name ]">{this.props.name}</h2>
                     <h2 className="[ hotel__price ]">{this.props.price + '$'}</h2> 
                     <br />
