@@ -76,7 +76,7 @@ export default class AccommodationsPage extends Component {
     }
 
     return (
-      <div className="[ wrapper ]">
+      <div className="[ container-fluid ]">
         <h1 className="[ headline ] [ headline--accommodations ]">
           Accommodations
         </h1>

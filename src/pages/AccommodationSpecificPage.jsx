@@ -50,7 +50,7 @@ export default class AccommodationSpesificPage extends React.Component {
     } = this.state.hotelObj;
 
     return (
-      <div className="[ wrapper ]">
+      <div className="[ container-fluid ]">
         <div className="[ col-sm-12 ] [ hotel ]">
           <AccommodationSpecific
             name={establishmentName}

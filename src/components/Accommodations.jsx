@@ -12,7 +12,7 @@ class Accommodations extends React.Component {
   render() {
     return (
       <div className="[ row ]">
-          <div class="col-sm">
+          <div class="[ col-sm ]">
         <div className="[ card ]" onClick={this.handleClick}>
           <img
             src={this.props.image}
