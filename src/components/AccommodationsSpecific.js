@@ -15,7 +15,7 @@ export default class AccommodationSpecific extends React.Component {
         <div className="[ col-sm-7 ]">
           <img
             src={this.props.image}
-            className="[ hotel__image ]"
+            className="[ hotel__image ] [ img-fluid ]"
             alt={this.props.name}
           />
         </div>
