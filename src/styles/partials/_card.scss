@@ -1,5 +1,9 @@
 // Card styles
 
+.headline--accommodations {
+    margin: 40px 0 70px 70px;
+}
+
 .spinner {
     position: absolute;
     left: 50%;
@@ -7,13 +11,8 @@
 }
 
 .searchbar {
-    background-image: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png") top left no-repeat;
     height: 30px;
     padding-left: 10px;
-    &--accommodations {
-        width: 400px;
-        margin: 10px 0 100px 80px;
-    }
     &--home {
         width: 600px;
         margin: 15px auto 0 auto;
