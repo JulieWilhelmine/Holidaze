@@ -10,7 +10,6 @@ export default class AccommodationsPage extends Component {
     super(props);
     this.state = {
       hotelArray: [],
-      hotelSearch: [],
       loading: true
     };
   }
@@ -29,7 +28,6 @@ export default class AccommodationsPage extends Component {
 
         this.setState({
           hotelArray: result,
-          hotelSearch: result,
           loading: false
         });
       });
@@ -81,20 +79,6 @@ export default class AccommodationsPage extends Component {
           Accommodations
         </h1>
 
-        <div className="[ row ]">
-          <Typeahead
-            className="[ searchbar ] [ searchbar--accommodations ]"
-            onChange={selected => {
-              // Handle selections...
-            }}
-            options={
-              [
-                /* Array of objects or strings */
-              ]
-            }
-            placeholder="What are you looking for?"
-          />
-        </div>
         <div className="[ row ]">
           <div className="[ card-deck ]">{this.renderAccommodations()}</div>
         </div>
