@@ -8,7 +8,6 @@ class HomePage extends Component {
 				<div className="[ col-sm-12 ] [ homePage ]">
 					<h1 className="[ headline ] [ headline--home ]">Accommodations in Bergen!</h1>
 					<HotelSearch />
-					/>
 				</div>
 			</div>
 		);
