@@ -2,6 +2,7 @@ import React from "react";
 import AccommodationSpecific from "../components/AccommodationsSpecific";
 import Modal from "react-bootstrap/Modal";
 import EnquiryContainer from "../components/EnquiryContainer";
+import MapContainer from "../components/MapContainer";
 
 export default class AccommodationSpesificPage extends React.Component {
   state = {
