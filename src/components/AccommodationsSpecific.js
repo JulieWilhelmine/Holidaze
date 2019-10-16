@@ -1,6 +1,7 @@
 // Accommodation Specific Component
 
 import React from "react";
+import MapContainer from "../components/MapContainer";
 
 export default class AccommodationSpecific extends React.Component {
   render() {
@@ -24,9 +25,12 @@ export default class AccommodationSpecific extends React.Component {
           <h2 className="[ hotel__price ]">{this.props.price + "$"}</h2>
           <br />
           <p className="[ hotel__description ]">{this.props.description}</p>
-          <b className="[ hotel__location ]">Location:</b>{" "}
-          <p>{this.props.lat + this.props.long}</p>
           <b className="[ hotel__email ]">Email:</b> <p>{this.props.email}</p>
+          <b className="[ hotel__location ]">Location:</b>
+          <MapContainer
+                    lat={this.props.lat}
+                    long={this.props.long}
+          />
           <button className="[ enquiryButton ]" onClick={this.props.openModal}>
             Make an enquiry!
           </button>

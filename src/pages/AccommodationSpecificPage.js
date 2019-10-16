@@ -64,10 +64,6 @@ export default class AccommodationSpesificPage extends React.Component {
             max={maxGuests}
             openModal={this.openModal}
           />
-          <MapContainer
-          lat={googleLat}
-          long={googleLong}
-          />
         </div>
 
         <Modal

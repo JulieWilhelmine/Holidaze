@@ -6,9 +6,6 @@
         max-width: 100%;
         margin: 0 0 0 70px;
     }
-    &__info {
-
-    }
     &__name {
         font-weight: bold;
         color: $darkblue;
@@ -24,9 +21,14 @@
     }
 }
 
+.googleMap {
+    max-width: 300px;
+    max-height: 220px;
+}
+
 .enquiryButton {
     @extend .AddEstablishmentButton;
-    margin: 10px 40% 150px 0;
+    margin: 10px 32% 150px 0;
 }
 
 .enquiry__container {
