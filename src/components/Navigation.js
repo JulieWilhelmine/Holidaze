@@ -9,7 +9,9 @@ function Navigation() {
 	return (
 		<>
 			<ContextConsumer>
-				{({ loggedIn }) => {
+				{({ loggedIn, logOut }) => {
+					console.log("loggedin", loggedIn);
+
 					return (
 						<Navbar expand="lg" bg="light" className="[ nav ]">
 							<Navbar.Brand id="logo">Holidaze</Navbar.Brand>
