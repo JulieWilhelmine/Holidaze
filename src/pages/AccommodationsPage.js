@@ -1,7 +1,6 @@
 // Accommodations Page
 import React, { Component } from "react";
 import Accommodations from "../components/Accommodations";
-import { Typeahead } from "react-bootstrap-typeahead";
 import "react-bootstrap-typeahead/css/Typeahead.css";
 import Spinner from "react-bootstrap/Spinner";
 

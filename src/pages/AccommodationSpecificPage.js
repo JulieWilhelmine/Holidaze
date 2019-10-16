@@ -2,6 +2,7 @@ import React from "react";
 import AccommodationSpecific from "../components/AccommodationsSpecific";
 import Modal from "react-bootstrap/Modal";
 import EnquiryContainer from "../components/EnquiryContainer";
+import GoogleApiWrapper from "../components/GoogleApiWrapper";
 
 export default class AccommodationSpesificPage extends React.Component {
   state = {
@@ -62,6 +63,10 @@ export default class AccommodationSpesificPage extends React.Component {
             long={googleLong}
             max={maxGuests}
             openModal={this.openModal}
+          />
+          <GoogleApiWrapper
+          lat={googleLat}
+          long={googleLong}
           />
         </div>
 
