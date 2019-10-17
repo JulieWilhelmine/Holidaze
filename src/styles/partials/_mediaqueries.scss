@@ -46,11 +46,13 @@
         right: 0;
         position: absolute;
         z-index: -1;   
+        background-position: center center;
     }
 
     .container-fluid--login::after {
         @extend .container-fluid--contact::after;
         background: url("https://images.unsplash.com/photo-1456176609386-1a154fc264ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1947&q=80");
+        background-position: center center;
     }
 
     .headline--addEstablishment {
