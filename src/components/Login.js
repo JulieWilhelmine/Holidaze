@@ -25,9 +25,9 @@ export default class Login extends React.Component {
 
   render() {
     return (
-      <div className="[ row ] [ login ]">
+      <div className=" [ login ]">
         <form className="[ login__form ]">
-          <label for="username">Username: </label>
+          <label htmlFor="username">Username: </label>
           <input
             className="[ login__input ]"
             type="text"
@@ -39,7 +39,7 @@ export default class Login extends React.Component {
             <i>{this.props.usernameError}</i>
           </span>
           <br />
-          <label for="password">Password: </label>
+          <label htmlFor="password">Password: </label>
           <input
             className="[ login__input ]"
             type="password"

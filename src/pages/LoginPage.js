@@ -43,7 +43,7 @@ class LoginPage extends React.Component {
     return (
       <div className="[ container-fluid ] [ container-fluid--login ]">
         <div className="[ row ]">
-          <div className="[ col-sm-6 ]">
+          <div className="[ col-sm-6 ] [ d-none d-md-block ]">
             <img
               src="https://images.unsplash.com/photo-1456176609386-1a154fc264ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1947&q=80"
               className="[ sideImage ] [ sideImage--login ]"

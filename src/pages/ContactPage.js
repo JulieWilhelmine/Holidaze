@@ -54,7 +54,7 @@ export default class ContactPage extends Component {
     return (
       <div className="[ container-fluid ] [ container-fluid--contact ] ">
         <div className="[ row ]">
-          <div className="[ col-sm-6 ] [ sideImage__container] ">
+          <div className="[ col-sm-6 ] [ sideImage__container] [ d-none d-md-block ]">
             <img
               src="https://images.unsplash.com/photo-1560687123-268c79127e7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
               alt="street view in Bergen"

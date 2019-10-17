@@ -2,36 +2,10 @@
 
 
 @media only screen and (max-width: 990px) {
-    .sideImage {
-        display: none;
-    }
 
     .contact {
         margin-left: 30px;
     }
-
-    .wrapper--contact, .wrapper--login {
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
-
-    .wrapper--contact::after {
-    content: "";
-    background: url("https://images.unsplash.com/photo-1560687123-268c79127e7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
-    opacity: 0.3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-  }
-
-  .wrapper--login::after {
-      @extend .wrapper--contact::after;
-      background: url("https://images.unsplash.com/photo-1456176609386-1a154fc264ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1947&q=80");
-  }
 
   .makeEnquiry {
 	&__form {
@@ -46,23 +20,40 @@
             width: 100px;
         }
 	}
-	&__submit {
-		background-color: $lightblue;
-		font-size: 1.5em;
-		padding: 10px 30px;
-		border: 1px solid $lightgrey;
-		border-radius: 10px;
-		color: white;
-		float: right;
-		margin: 10px 0 0 0;
-		&:hover {
-			background-color: $darkblue;
-		}
-	}
+   }
+
+   .headline--login {
+       font-size: 2em;
+       text-align: center;
+   }
 }
 
-}
+@media only screen and (max-width: 766px) {
+    
+    .container-fluid--contact, .container-fluid--login {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
 
+    .container-fluid--contact::after {
+        content: "";
+        background: url("https://images.unsplash.com/photo-1560687123-268c79127e7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+        opacity: 0.3;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+    }
+
+    .container-fluid--login::after {
+        @extend .container-fluid--contact::after;
+        background: url("https://images.unsplash.com/photo-1456176609386-1a154fc264ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1947&q=80");
+    }
+      
+}
 
 @media only screen and (max-width: 360px) {
     .headline {
@@ -73,15 +64,36 @@
         &--accommodations {
             margin-left: 20px;
         }
+        &--contact {
+            margin-top: 40px;
+        }
+        &--login {
+            margin-left: 10px;
+        }
     }
 
     .hotel {
         &__image {
             margin: 0 0 20px 10px;
         }
-}
-.enquiryButton2 {
-    font-size: 1.3em;
-    margin: 20px auto 50px auto;
-}
+    }
+
+    .enquiryButton2 {
+        font-size: 1.3em;
+        margin: 20px auto 50px auto;
+    }
+
+    .contact {
+        margin-left: 5px;
+        &__input { 
+            width: 160px;
+        }
+        &__submit {
+            margin-bottom: 100px;
+        }
+    }
+
+    .login__form {
+        margin-left: 10px;
+    }
 }
