@@ -87,7 +87,7 @@ export default class AddEstablishmentPage extends Component {
 								/>
 								<label htmlFor="establishmentEmail">Establishment Email: </label>
 								<input
-									type="text"
+									type="email"
 									name="establishmentEmail"
 									id="establishmentEmail"
 									className="[ addEstablishment__input ]"
