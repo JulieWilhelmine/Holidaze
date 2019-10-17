@@ -74,120 +74,126 @@ export default class AddEstablishmentPage extends Component {
 
 						<h2 className="[ headline ] [ headline--addEstablishment ]">Establishment details:</h2>
 						<form onSubmit={this.sendMessage} className="[ addEstablishment ]">
-							<label htmlFor="establishmentName">Establishment Name: </label>
-							<input
-								type="text"
-								name="establishmentName"
-								id="establishmentName"
-								className="[ addEstablishment__input ]"
-								onChange={this.handleChange}
-								value={this.state.establishmentName}
-								required
-							/>
-							<label htmlFor="establishmentEmail">Establishment Email: </label>
-							<input
-								type="text"
-								name="establishmentEmail"
-								id="establishmentEmail"
-								className="[ addEstablishment__input ]"
-								onChange={this.handleChange}
-								value={this.state.establishmentEmail}
-								required
-							/>
-							<br />
-							<label htmlFor="imageUrl">Image URL: </label>
-							<input
-								type="text"
-								name="imageUrl"
-								id="imageUrl"
-								className="[ addEstablishment__input ]"
-								onChange={this.handleChange}
-								value={this.state.imageUrl}
-								required
-							/>
-							<label htmlFor="price">Price per person per night ($): </label>
-							<input
-								type="number"
-								name="price"
-								id="price"
-								className="[ addEstablishment__input ]"
-								onChange={this.handleChange}
-								value={this.state.price}
-								required
-							/>
-
-							<br />
-							<label htmlFor="maxGuests">Max guests: </label>
-							<input
-								type="number"
-								name="maxGuests"
-								id="maxGuests"
-								className="[ addEstablishment__input ]"
-								onChange={this.handleChange}
-								value={this.state.maxGuests}
-								required
-							/>
-							<label htmlFor="id">ID: </label>
-							<input
-								type="number"
-								name="id"
-								id="id"
-								className="[ addEstablishment__input ]"
-								onChange={this.handleChange}
-								value={this.state.id}
-								required
-							/>
-							<br />
-							<label htmlFor="selfCatering">Self-catering?</label>
-							<label htmlFor="true">Yes</label>
-							<input
-								type="radio"
-								id="true"
-								name="selfCatering"
-								value={this.state.selfCatering}
-								onChange={this.handleChange}
-							/>
-							<label htmlFor="false">No</label>
-							<input
-								type="radio"
-								id="false"
-								name="selfCatering"
-								value={this.state.selfCatering}
-								onChange={this.handleChange}
-							/>
-							<br />
-							<label htmlFor="googleLat">Google Coordinates Latitude: </label>
-							<input
-								type="text"
-								name="googleLat"
-								id="googleLat"
-								className="[ addEstablishment__input ]"
-								onChange={this.handleChange}
-								value={this.state.googleLat}
-								required
-							/>
-							<br />
-							<label htmlFor="googleLong">Google Coordinates Longitude: </label>
-							<input
-								type="text"
-								name="googleLong"
-								id="googleLong"
-								className="[ addEstablishment__input ]"
-								onChange={this.handleChange}
-								value={this.state.googleLong}
-								required
-							/>
-							<br />
-							<label htmlFor="description">Description: </label>
-							<input
-								name="description"
-								id="description"
-								className="[ addEstablishment__input ]"
-								onChange={this.handleChange}
-								value={this.state.description}
-								required
-							/>
-							<br />
+							<fieldset>
+								<label htmlFor="establishmentName">Establishment Name: </label>
+								<input
+									type="text"
+									name="establishmentName"
+									id="establishmentName"
+									className="[ addEstablishment__input ]"
+									onChange={this.handleChange}
+									value={this.state.establishmentName}
+									required
+								/>
+								<label htmlFor="establishmentEmail">Establishment Email: </label>
+								<input
+									type="text"
+									name="establishmentEmail"
+									id="establishmentEmail"
+									className="[ addEstablishment__input ]"
+									onChange={this.handleChange}
+									value={this.state.establishmentEmail}
+									required
+								/>
+							</fieldset>
+							<fieldset>
+								<label htmlFor="imageUrl">Image URL: </label>
+								<input
+									type="text"
+									name="imageUrl"
+									id="imageUrl"
+									className="[ addEstablishment__input ]"
+									onChange={this.handleChange}
+									value={this.state.imageUrl}
+									required
+								/>
+								<label htmlFor="price">Price per person per night ($): </label>
+								<input
+									type="number"
+									name="price"
+									id="price"
+									className="[ addEstablishment__input ]"
+									onChange={this.handleChange}
+									value={this.state.price}
+									required
+								/>
+							</fieldset>
+							<fieldset>
+								<label htmlFor="maxGuests">Max guests: </label>
+								<input
+									type="number"
+									name="maxGuests"
+									id="maxGuests"
+									className="[ addEstablishment__input ]"
+									onChange={this.handleChange}
+									value={this.state.maxGuests}
+									required
+								/>
+								<label htmlFor="id">ID: </label>
+								<input
+									type="number"
+									name="id"
+									id="id"
+									className="[ addEstablishment__input ]"
+									onChange={this.handleChange}
+									value={this.state.id}
+									required
+								/>
+							</fieldset>
+							<fieldset>
+								<label htmlFor="selfCatering">Self-catering?</label>
+								<label htmlFor="true">Yes</label>
+								<input
+									type="radio"
+									id="true"
+									name="selfCatering"
+									value={this.state.selfCatering}
+									onChange={this.handleChange}
+								/>
+								<label htmlFor="false">No</label>
+								<input
+									type="radio"
+									id="false"
+									name="selfCatering"
+									value={this.state.selfCatering}
+									onChange={this.handleChange}
+								/>
+							</fieldset>
+							<fieldset>
+								<label htmlFor="googleLat">Google Coordinates Latitude: </label>
+								<input
+									type="text"
+									name="googleLat"
+									id="googleLat"
+									className="[ addEstablishment__input ]"
+									onChange={this.handleChange}
+									value={this.state.googleLat}
+									required
+								/>
+							</fieldset>
+							<fieldset>
+								<label htmlFor="googleLong">Google Coordinates Longitude: </label>
+								<input
+									type="text"
+									name="googleLong"
+									id="googleLong"
+									className="[ addEstablishment__input ]"
+									onChange={this.handleChange}
+									value={this.state.googleLong}
+									required
+								/>
+							</fieldset>
+							<fieldset>
+								<label htmlFor="description">Description: </label>
+								<input
+									name="description"
+									id="description"
+									className="[ addEstablishment__input ]"
+									onChange={this.handleChange}
+									value={this.state.description}
+									required
+								/>
+							</fieldset>
 							<input type="submit" className="[ addEstablishment__submit ]" />
 						</form>
 					</div>
