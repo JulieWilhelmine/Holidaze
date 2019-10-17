@@ -61,7 +61,7 @@
             font-size: 2.2em;
             margin-top: 120px;
         }
-        &--accommodations {
+        &--accommodations, &--admin, &--enquiries {
             margin-left: 20px;
         }
         &--contact {
@@ -70,6 +70,13 @@
         &--login {
             margin-left: 10px;
         }
+        &--admin {
+            margin-bottom: 30px;
+        }
+    }
+
+    .enquiry {
+        margin-left: 10px;
     }
 
     .hotel {

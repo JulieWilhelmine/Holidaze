@@ -83,7 +83,8 @@ export default class AdminPage extends Component {
 
   render() {
     return (
-      <div className="[ wrapper ]">
+      <div className="[ container-fluid ]">
+        <div className="[ row ]">
         <div className="[ col-sm-12 ]">
           <h1 className="[ headline ] [ headline--admin ]">Administration</h1>
           <button
@@ -92,6 +93,7 @@ export default class AdminPage extends Component {
           >
             Add Establishment
           </button>
+        </div>
         </div>
 
         <div className="[ row ]">
