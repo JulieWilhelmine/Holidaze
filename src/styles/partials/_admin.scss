@@ -1,52 +1,53 @@
 // Admin styles
 
 .headline {
-    &--enquiries, &--messages {
-        color: $lightblue;
-        font-weight: bold;
-    }
-    &--enquiries {
-        margin: 80px 0 10px 70px;
-    }
-    &--messages {
-        margin: 80px 0 10px 0 ;
-    }
+	&--enquiries,
+	&--messages {
+		color: $lightblue;
+		font-weight: bold;
+	}
+	&--enquiries {
+		margin: 80px 0 10px 70px;
+	}
+	&--messages {
+		margin: 80px 0 10px 0;
+	}
 }
 
 .enquiry {
-    margin: 20px 0 0 60px;
-    border: 1px solid $lightblue;
-    padding: 15px 30px;
-    &__establishment {
-        font-weight: bold;
-        font-size: 1.3em;
-    }
+	margin: 20px 0 0 60px;
+	border: 1px solid $lightblue;
+	padding: 15px 30px;
+	&__establishment {
+		font-weight: bold;
+		font-size: 1.3em;
+	}
 }
 
 .message {
-    @extend .enquiry;
-    margin: 20px 0 0 0;
-    &__clientName {
-        font-weight: bold;
-        font-size: 1.3em;
-    }
+	@extend .enquiry;
+	margin: 20px 0 0 0;
+	&__clientName {
+		font-weight: bold;
+		font-size: 1.3em;
+	}
 }
 
-.messages, .enquiries {
-    margin: 0 0 100px 0;
+.messages,
+.enquiries {
+	margin: 0 0 100px 0;
 }
 
 .AddEstablishmentButton {
-    background-color: $lightblue;
-        font-size: 1.5em;
-        padding: 10px 30px;
-        border: 1px solid $lightgrey;
-        border-radius: 10px;
-        color: white;
-        float: right;
-        margin-right: 30px;
-        &:hover {
-            background-color: $darkblue;
-        }
+	background-color: $lightblue;
+	font-size: 1.5em;
+	padding: 10px 30px;
+	border: 1px solid $lightgrey;
+	border-radius: 10px;
+	color: white;
+	float: right;
+	margin-right: 30px;
+	&:hover {
+		background-color: $darkblue;
+	}
 }
-

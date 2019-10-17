@@ -1,22 +1,21 @@
-// Login styles 
+// Login styles
 
 .login {
-    margin: 20px;
-    label {
-        font-size: 1.1em;
-    }
-    &__form {
-        margin-left: 23%;
-    }
-    &__input {
-        @extend .contact__input;
-        padding: 5px;
-    }
+	margin: 20px;
+	label {
+		font-size: 1.1em;
+	}
+	&__form {
+		margin-left: 23%;
+	}
+	&__input {
+		@extend .contact__input;
+		padding: 5px;
+	}
 
-    &__button {
-        @extend .contact__submit;
-        margin: 20px 0 0 100px;
-        padding: 10px 25px;
-    }
+	&__button {
+		@extend .contact__submit;
+		margin: 20px 0 0 100px;
+		padding: 10px 25px;
+	}
 }
-
