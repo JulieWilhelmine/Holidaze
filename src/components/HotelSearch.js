@@ -47,7 +47,7 @@ class HotelSearch extends Component {
 	render() {
 		return (
 			<Typeahead
-				className="[ searchbar ] [ searchbar--home ]"
+				className="[ searchbar ]"
 				onChange={selected => {
 					this.handleChange(selected);
 				}}

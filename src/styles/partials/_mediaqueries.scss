@@ -34,3 +34,26 @@
   }
 
 }
+
+
+@media only screen and (max-width: 360px) {
+    .headline {
+        &--home {
+            font-size: 2.2em;
+            margin-top: 120px;
+        }
+        &--accommodations {
+            margin-left: 20px;
+        }
+    }
+
+    .hotel {
+        &__image {
+            margin: 0 0 20px 10px;
+        }
+}
+.enquiryButton2 {
+    font-size: 1.3em;
+    margin: 20px auto 50px auto;
+}
+}
