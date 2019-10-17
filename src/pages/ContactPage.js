@@ -67,41 +67,45 @@ export default class ContactPage extends Component {
 						<h1 className="[ headline ] [ headline--contact ]">Contact us</h1>
 
 						<form className="[ contact ]" onSubmit={this.sendMessage}>
-							<label htmlFor="clientName">Full name: </label>
-							<input
-								className="[ contact__input ]"
-								onChange={this.handleChange}
-								type="text"
-								name="clientName"
-								id="clientName"
-								value={this.state.clientName}
-								required
-							/>
-							<br />
-							<label htmlFor="email">Email Address: </label>
-							<input
-								className="[ contact__input ]"
-								onChange={this.handleChange}
-								type="text"
-								name="email"
-								id="email"
-								value={this.state.email}
-								required
-							/>
-							<br />
-							<label className="[ contact__message ]" onChange={this.handleChange} htmlFor="message">
-								Message:{" "}
-							</label>
-							<br />
-							<textarea
-								name="message"
-								id="message"
-								rows="8"
-								cols="40"
-								onChange={this.handleChange}
-								value={this.state.message}
-							></textarea>
-							<br />
+							<fieldset>
+								<label htmlFor="clientName">Full name: </label>
+								<input
+									className="[ contact__input ]"
+									onChange={this.handleChange}
+									type="text"
+									name="clientName"
+									id="clientName"
+									value={this.state.clientName}
+									required
+								/>
+							</fieldset>
+
+							<fieldset>
+								<label htmlFor="email">Email Address: </label>
+								<input
+									className="[ contact__input ]"
+									onChange={this.handleChange}
+									type="text"
+									name="email"
+									id="email"
+									value={this.state.email}
+									required
+								/>
+							</fieldset>
+							<fieldset>
+								<label className="[ contact__message ]" onChange={this.handleChange} htmlFor="message">
+									Message:{" "}
+								</label>
+								<br />
+								<textarea
+									name="message"
+									id="message"
+									rows="8"
+									cols="40"
+									onChange={this.handleChange}
+									value={this.state.message}
+								></textarea>
+							</fieldset>
 							<input className="[ contact__submit ]" type="submit" />
 						</form>
 					</div>
