@@ -23,13 +23,9 @@
 	&__price {
 		font-weight: bold;
 		color: $green;
-	}
+	} 
 }
 
-.googleMap {
-	max-width: 300px;
-	max-height: 220px;
-}
 
 .enquiryButton {
 	@extend .AddEstablishmentButton;

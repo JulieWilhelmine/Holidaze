@@ -2,6 +2,9 @@
 
 .login {
     margin: 20px;
+    label {
+        font-size: 1.1em;
+    }
     &__form {
         margin-left: 23%;
     }
