@@ -1,6 +1,9 @@
 // Admin styles
 
 .headline {
+    &--admin {
+        margin: 20px 0 10px 70px;
+    }
 	&--enquiries,
 	&--messages {
 		color: $lightblue;

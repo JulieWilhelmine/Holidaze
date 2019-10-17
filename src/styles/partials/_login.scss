@@ -1,5 +1,13 @@
 // Login styles
 
+.headline {
+	&--login,
+	&--home {
+		margin-left: 20%;
+		margin-top: 100px;
+	}
+}
+
 .login {
 	margin: 20px;
 	label {

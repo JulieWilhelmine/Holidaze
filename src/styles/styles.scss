@@ -21,16 +21,6 @@ h1 {
     font-weight: bold;
 }
 
-.headline {
-    &--login, &--home {
-        margin-left: 20%;
-        margin-top: 100px;
-    }
-    &--admin {
-        margin: 20px 0 10px 70px;
-    }
-}
-
 //Imports
 @import url(https://fonts.googleapis.com/css?family=Mada|Unica+One&display=swap);
 
