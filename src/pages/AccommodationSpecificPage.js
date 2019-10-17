@@ -1,3 +1,5 @@
+// Accommodation Specific page
+
 import React from "react";
 import AccommodationSpecific from "../components/AccommodationsSpecific";
 import Modal from "react-bootstrap/Modal";

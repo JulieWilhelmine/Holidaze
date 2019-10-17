@@ -1,3 +1,5 @@
+// Home page
+
 import React, { Component } from "react";
 import HotelSearch from "../components/HotelSearch";
 

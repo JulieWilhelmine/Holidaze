@@ -1,4 +1,5 @@
 // Accommodations Page
+
 import React, { Component } from "react";
 import Accommodations from "../components/Accommodations";
 import "react-bootstrap-typeahead/css/Typeahead.css";

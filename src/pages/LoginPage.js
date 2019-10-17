@@ -1,3 +1,5 @@
+// Login page
+
 import React from "react";
 import Login from "../components/Login";
 import withContext from "../context/withContext";
