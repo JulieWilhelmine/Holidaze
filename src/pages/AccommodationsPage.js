@@ -78,7 +78,7 @@ export default class AccommodationsPage extends Component {
 			<div className="[ container-fluid ]">
 				<h1 className="[ headline ] [ headline--accommodations ]">Accommodations</h1>
 
-				<div className="[ row ]">
+				<div className="[ row ] [ accommodations ]">
 					<div className="[ card-deck ]">{this.renderAccommodations()}</div>
 				</div>
 				<Helmet>
