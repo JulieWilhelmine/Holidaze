@@ -1,3 +1,5 @@
+// Enquiry form component
+
 import React, { Component } from 'react';
 
 export default class EnquiryForm extends Component {

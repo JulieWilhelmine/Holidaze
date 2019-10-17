@@ -1,16 +1,18 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import { ContextConsumer } from "../context/context";
-import LogOutButton from "./LogOutButton";
+// Navigation component
+
+import React from "react"
+import { NavLink } from "react-router-dom"
+import Navbar from "react-bootstrap/Navbar"
+import Nav from "react-bootstrap/Nav"
+import { ContextConsumer } from "../context/context"
+import LogOutButton from "./LogOutButton"
 
 function Navigation() {
 	return (
 		<>
 			<ContextConsumer>
 				{({ loggedIn, logOut }) => {
-					console.log("loggedin", loggedIn);
+					console.log("loggedin", loggedIn)
 
 					return (
 						<Navbar expand="lg" bg="light" className="[ nav ]">
@@ -42,13 +44,13 @@ function Navigation() {
 								</Nav>
 							</Navbar.Collapse>
 						</Navbar>
-					);
+					)
 				}}
 			</ContextConsumer>
 
 			<hr />
 		</>
-	);
+	)
 }
 
-export default Navigation;
+export default Navigation

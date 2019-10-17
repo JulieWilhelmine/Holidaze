@@ -1,3 +1,5 @@
+// Enquiry form container component
+
 import React, { Component } from 'react';
 import EnquiryForm from "./EnquiryForm";
 import MessageAlert from "./MessageAlert";

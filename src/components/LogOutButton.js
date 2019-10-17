@@ -1,3 +1,5 @@
+// Log out button
+
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import withContext from "../context/withContext";

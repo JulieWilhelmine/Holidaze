@@ -1,3 +1,5 @@
+// Search bar typeahead component
+
 import React, { Component } from "react";
 import { Typeahead } from "react-bootstrap-typeahead";
 import { withRouter } from "react-router-dom";
