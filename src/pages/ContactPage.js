@@ -66,7 +66,7 @@ export default class ContactPage extends Component {
             <h1 className="[ headline ] [ headline--contact ]">Contact us</h1>
 
             <form className="[ contact ]" onSubmit={this.sendMessage}>
-              <label for="clientName">Full name: </label>
+              <label htmlFor="clientName">Full name: </label>
               <input
                 className="[ contact__input ]"
                 onChange={this.handleChange}
@@ -77,7 +77,7 @@ export default class ContactPage extends Component {
                 required
               />
               <br />
-              <label for="email">Email Address: </label>
+              <label htmlFor="email">Email Address: </label>
               <input
                 className="[ contact__input ]"
                 onChange={this.handleChange}
@@ -91,7 +91,7 @@ export default class ContactPage extends Component {
               <label
                 className="[ contact__message ]"
                 onChange={this.handleChange}
-                for="message"
+                htmlFor="message"
               >
                 Message:{" "}
               </label>

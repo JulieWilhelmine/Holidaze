@@ -33,6 +33,34 @@
       background: url("https://images.unsplash.com/photo-1456176609386-1a154fc264ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1947&q=80");
   }
 
+  .makeEnquiry {
+	&__form {
+		min-width: 300px;
+	}
+	&__input {
+		padding-left: 10px;
+		&--guests {
+			width: 80px;
+        }
+        &--dates {
+            width: 100px;
+        }
+	}
+	&__submit {
+		background-color: $lightblue;
+		font-size: 1.5em;
+		padding: 10px 30px;
+		border: 1px solid $lightgrey;
+		border-radius: 10px;
+		color: white;
+		float: right;
+		margin: 10px 0 0 0;
+		&:hover {
+			background-color: $darkblue;
+		}
+	}
+}
+
 }
 
 
