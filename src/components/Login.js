@@ -27,7 +27,7 @@ export default class Login extends React.Component {
 		return (
 			<div className=" [ login ]">
 				<form className="[ login__form ]">
-					<fieldset>
+					<div className="[ form-group ]">
 						<label htmlFor="username">Username: </label>
 						<input
 							className="[ login__input ]"
@@ -39,8 +39,8 @@ export default class Login extends React.Component {
 						<span className="[ login__error ]">
 							<i>{this.props.usernameError}</i>
 						</span>
-					</fieldset>
-					<fieldset>
+					</div>
+					<div className="[ form-group ]">
 						<label htmlFor="password">Password: </label>
 						<input
 							className="[ login__input ]"
@@ -52,7 +52,7 @@ export default class Login extends React.Component {
 						<span className="[ login__error ]">
 							<i>{this.props.passwordError}</i>
 						</span>
-					</fieldset>
+					</div>
 					<button type="button" className="[ login__button ]" onClick={this.login}>
 						Login
 					</button>
