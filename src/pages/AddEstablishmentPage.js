@@ -69,10 +69,11 @@ export default class AddEstablishmentPage extends Component {
 
   render() {
     return (
-      <div className="[ wrapper ]">
+      <div className="[ container-fluid ]">
+        <div className="[ row ]">
         <div className="[ col-sm-12 ]">
           <h1 className="[ headline ] [ headline--admin ]">Administration</h1>
-
+          
           <h2 className="[ headline ] [ headline--addEstablishment ]">
             Establishment details:
           </h2>
@@ -208,6 +209,7 @@ export default class AddEstablishmentPage extends Component {
             <p>The establishment has been added!</p>
           </Modal.Body>
         </Modal>
+        </div>
       </div>
     );
   }

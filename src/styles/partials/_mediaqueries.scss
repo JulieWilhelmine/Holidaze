@@ -52,6 +52,14 @@
         @extend .container-fluid--contact::after;
         background: url("https://images.unsplash.com/photo-1456176609386-1a154fc264ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1947&q=80");
     }
+
+    .headline--addEstablishment {
+        margin-left: 20px;
+    }
+
+    .addEstablishment {
+        margin-left: 10px;
+    }
       
 }
 
@@ -103,4 +111,6 @@
     .login__form {
         margin-left: 10px;
     }
+
+
 }
