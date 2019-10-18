@@ -15,6 +15,7 @@ class HomePage extends Component {
 				<Helmet>
 					<meta charSet="utf-8" />
 					<title>Holidaze</title>
+					<meta name="description" content="Find accommodations in Bergen!" />
 				</Helmet>
 			</div>
 		)

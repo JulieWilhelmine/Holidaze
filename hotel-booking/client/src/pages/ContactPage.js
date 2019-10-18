@@ -126,6 +126,7 @@ export default class ContactPage extends Component {
 				<Helmet>
 					<meta charSet="utf-8" />
 					<title>Holidaze Contact</title>
+					<meta name="description" content="Contact Holidaze administrators" />
 				</Helmet>
 			</div>
 		)

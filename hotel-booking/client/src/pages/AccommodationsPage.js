@@ -84,6 +84,7 @@ export default class AccommodationsPage extends Component {
 				<Helmet>
 					<meta charSet="utf-8" />
 					<title>Holidaze Accommodations</title>
+					<meta name="description" content="Accommodations in Bergen" />
 				</Helmet>
 			</div>
 		)

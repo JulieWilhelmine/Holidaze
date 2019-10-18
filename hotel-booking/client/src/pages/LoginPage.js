@@ -63,6 +63,7 @@ class LoginPage extends React.Component {
 				<Helmet>
 					<meta charSet="utf-8" />
 					<title>Holidaze Login</title>
+					<meta name="description" content="Login for Holidaze administrators" />
 				</Helmet>
 			</div>
 		)

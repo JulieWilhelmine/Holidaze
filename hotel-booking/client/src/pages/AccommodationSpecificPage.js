@@ -84,6 +84,7 @@ export default class AccommodationSpesificPage extends React.Component {
 				<Helmet>
 					<meta charSet="utf-8" />
 					<title>Holidaze {establishmentName}</title>
+					<meta name="description" content="Details about accommodation in Bergen" />
 				</Helmet>
 			</div>
 		)
