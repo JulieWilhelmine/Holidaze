@@ -1,0 +1,37 @@
+//Main scss
+
+//Variables
+$mada: 'Mada', sans-serif;  
+$unica: 'Unica One', cursive;
+$lightblue: #3083ae;
+$darkblue: #09689a;
+$lightgrey: #616160;
+$darkgrey: #393939;
+$green: #24A36E;
+
+//General
+
+body {
+    font-family: $mada;
+    color: $darkgrey;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+h1 {
+    color: $darkblue;
+    font-weight: bold;
+}
+
+//Imports
+@import url(https://fonts.googleapis.com/css?family=Mada|Unica+One&display=swap);
+
+@import './partials/navigation';
+@import './partials/accommodationSpecific';
+@import './partials/admin';
+@import './partials/accommoadations';
+@import './partials/homepage';
+@import './partials/contact';
+@import './partials/login';
+@import './partials/addEstablishment';
+@import './partials/mediaqueries';

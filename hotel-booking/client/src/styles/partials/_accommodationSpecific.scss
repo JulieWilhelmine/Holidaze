@@ -1,0 +1,90 @@
+// AccommodationSpecific styles
+
+.accommodation {
+	margin-top: 40px;
+}
+
+.hotel {
+	&__image {
+		max-width: 100%;
+		margin: 0 0 0 20px;
+	}
+	&__info {
+		padding-left: 15px;
+	}
+	&__name {
+		font-weight: bold;
+		color: $darkblue;
+	}
+	&__description {
+		font-size: 1.2em;
+		max-width: 600px;
+		margin: 0 0 20px 0;
+	}
+	&__price {
+		font-weight: bold;
+		color: $green;
+	}
+}
+
+.enquiryButton {
+	@extend .AddEstablishmentButton;
+	margin: 10px 32% 150px 0;
+}
+
+.enquiryButton2 {
+	@extend .AddEstablishmentButton;
+	float: none;
+	margin-top: 15px;
+}
+
+.enquiry__container {
+	min-width: 700px;
+}
+
+.makeEnquiry {
+	&__form {
+		padding: 60px;
+		min-width: 700px;
+	}
+	&__input {
+		margin: 10px 10px 0 10px;
+		border-radius: 10px;
+		border: 1px solid $lightgrey;
+		padding: 4px;
+		&--establishment {
+			font-size: 1.2em;
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+	&__submit {
+		background-color: $lightblue;
+		font-size: 1.5em;
+		padding: 10px 30px;
+		border: 1px solid $lightgrey;
+		border-radius: 10px;
+		color: white;
+		float: right;
+		margin: 10px 0 0 0;
+		&:hover {
+			background-color: $darkblue;
+		}
+	}
+}
+
+.enquirySuccess {
+	&__message {
+		padding: 30px;
+		text-align: center;
+	}
+}
+
+.map {
+	height: 200px;
+
+	&__google {
+		width: 100% !important;
+		height: 200px !important;
+	}
+}
