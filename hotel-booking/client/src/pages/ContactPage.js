@@ -70,7 +70,7 @@ export default class ContactPage extends Component {
 							<fieldset>
 								<label htmlFor="clientName">Full name: </label>
 								<input
-									className="[ contact__input ]"
+									className="[ contact__input ] [ contact__input--name ]"
 									onChange={this.handleChange}
 									type="text"
 									name="clientName"
