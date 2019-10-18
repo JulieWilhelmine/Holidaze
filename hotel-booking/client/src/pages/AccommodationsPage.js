@@ -16,10 +16,10 @@ export default class AccommodationsPage extends Component {
 	}
 
 	componentDidMount() {
-		this.getData()
+		this.getEstablishments()
 	}
 
-	getData = () => {
+	getEstablishments = () => {
 		fetch("http://localhost/hotel-booking/server/get-establishments.php")
 			.then(response => {
 				return response.json()

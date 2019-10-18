@@ -162,7 +162,7 @@ export default class AddEstablishmentPage extends Component {
 							<fieldset>
 								<label htmlFor="googleLat">Google Coordinates Latitude: </label>
 								<input
-									type="text"
+									type="number"
 									name="googleLat"
 									id="googleLat"
 									className="[ addEstablishment__input ]"
@@ -174,7 +174,7 @@ export default class AddEstablishmentPage extends Component {
 							<fieldset>
 								<label htmlFor="googleLong">Google Coordinates Longitude: </label>
 								<input
-									type="text"
+									type="number"
 									name="googleLong"
 									id="googleLong"
 									className="[ addEstablishment__input ]"

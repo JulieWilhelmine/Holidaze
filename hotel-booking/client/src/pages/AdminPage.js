@@ -15,11 +15,11 @@ export default class AdminPage extends Component {
 	}
 
 	componentDidMount() {
-		this.getData()
-		this.getData2()
+		this.getEnquiries()
+		this.getMessages()
 	}
 
-	getData = () => {
+	getEnquiries = () => {
 		fetch("http://localhost/hotel-booking/server/get-enquiries.php")
 			.then(response => {
 				return response.json()
@@ -33,7 +33,7 @@ export default class AdminPage extends Component {
 			})
 	}
 
-	getData2 = () => {
+	getMessages = () => {
 		fetch("http://localhost/hotel-booking/server/get-contacts.php")
 			.then(response => {
 				return response.json()
