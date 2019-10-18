@@ -46,12 +46,14 @@
 	&__form {
 		padding: 60px;
 		min-width: 700px;
+		margin: 0 auto 0 auto;
 	}
 	&__input {
-		margin: 10px 10px 0 10px;
-		border-radius: 10px;
+		margin: 0px 10px 10px 0px;
+		border-radius: 5px;
 		border: 1px solid $lightgrey;
 		padding: 4px;
+		width: 100%;
 		&--establishment {
 			font-size: 1.2em;
 			font-weight: bold;

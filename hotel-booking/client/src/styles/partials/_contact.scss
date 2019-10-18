@@ -21,9 +21,12 @@
 	}
 	&__input {
 		margin: 10px 0 0 10px;
-		border-radius: 10px;
+		border-radius: 5px;
 		border: 1px solid $lightgrey;
 		width: 200px;
+	}
+	&__input--name {
+		padding-right: 232px;
 	}
 	&__message {
 		margin-top: 20px;
