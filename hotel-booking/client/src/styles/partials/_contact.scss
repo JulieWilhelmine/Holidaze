@@ -24,9 +24,10 @@
 		border-radius: 5px;
 		border: 1px solid $lightgrey;
 		width: 200px;
+		padding-left: 10px;
 	}
 	&__input--name {
-		padding-right: 232px;
+		min-width: 237px;
 	}
 	&__message {
 		margin-top: 20px;
